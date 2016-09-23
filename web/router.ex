@@ -17,6 +17,7 @@ defmodule FunctionalTodoList.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    get "/todos", TodoController, :index
   end
 
   # Other scopes may use custom stacks.
